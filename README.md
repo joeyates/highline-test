@@ -7,7 +7,7 @@ default STDIN and STDOUT). This fact facilitates testing, allowing you to use
 StringIO objects for input and output.
 
 The problem with this approach is that it is hard to seperate the test, which pushes
-data to the input stream, and the application which reads that data.
+data to the input stream, and the application, which reads that data.
 
 HighLine::Test resolves this problem by forking the test process.
 One fork runs the tests, the other runs the application.
